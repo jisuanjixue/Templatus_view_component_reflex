@@ -1,18 +1,11 @@
 [![Build Status](https://github.com/templatus/templatus-hotwire/workflows/CI/badge.svg)](https://github.com/templatus/templatus-hotwire/actions)
 [![Cypress](https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/simple/5d6bqs&style=flat-square&logo=cypress)](https://dashboard.cypress.io/projects/5d6bqs/runs)
 
-# Templatus (Hotwire edition)
+# Templatus (view_component_reflex edition)
 
-Templatus is an opinionated template to build web applications with Ruby on Rails and Hotwire. It simplifies the process of setting up a new application while following best practices.
+Templatus is an opinionated template to build web applications with Ruby on Rails and view_component_reflex. It simplifies the process of setting up a new application while following best practices.
 
 Live demo available at https://templatus-hotwire.ledermann.dev
-
-There are two sister repositories:
-
-- Using Vue.js instead of Hotwire: https://github.com/templatus/templatus-vue/
-- Using Inertia and Svelte.js instead of Hotwire: https://github.com/templatus/templatus-inertia/
-
-## Features / Technology stack
 
 ### Backend
 
@@ -25,8 +18,9 @@ There are two sister repositories:
 
 ### Frontend
 
-- [Hotwire](https://hotwire.io/) for building the frontend without using much JavaScript by sending HTML instead of JSON over the wire
+- [view_component_reflex](https://github.com/joshleblanc/view_component_reflex) for About Call component methods right from your markup, It builds upon stimulus_reflex and view_component: 
 - [ViewComponent](https://viewcomponent.org/) for creating reusable, testable & encapsulated view components
+- [stimulus_reflex](https://docs.stimulusreflex.com/) for build reactive applications with the Rails tooling you already know and love
 - [Slim](http://slim-lang.com/) for writing templates instead of ERB
 - [Tailwind CSS 3](https://tailwindcss.com/) to not have to write CSS at all
 - [Heroicons](https://heroicons.com/) for beautiful hand-crafted SVG icons
