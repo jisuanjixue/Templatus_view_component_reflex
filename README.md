@@ -5,7 +5,7 @@
 
 Templatus is an opinionated template to build web applications with Ruby on Rails and view_component_reflex. It simplifies the process of setting up a new application while following best practices.
 
-Live demo available at https://templatus-hotwire.ledermann.dev
+Live demo available at 
 
 ### Backend
 
