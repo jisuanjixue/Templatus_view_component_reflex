@@ -90,6 +90,7 @@ Rails.application.configure do
     'spec',
     'component_previews',
   )
+  config.hosts << "templatus_view_component_reflex.test"
 
   # Enable load_async
   config.active_record.async_query_executor = :global_thread_pool

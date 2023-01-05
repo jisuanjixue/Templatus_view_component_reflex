@@ -6,7 +6,7 @@
   "development": {
     "autoBuild": true,
     "publicOutputDir": "vite-dev",
-    "host": "vite.templatus-hotwire.test",
+    "host": "vite.templatus_view_component_reflex.test",
     "port": 3036
   },
   "test": {

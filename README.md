@@ -1,11 +1,11 @@
-[![Build Status](https://github.com/templatus/templatus-hotwire/workflows/CI/badge.svg)](https://github.com/templatus/templatus-hotwire/actions)
+[![Build Status](https://github.com/templatus/templatus_view_component_reflex/workflows/CI/badge.svg)](https://github.com/templatus/templatus_view_component_reflex/actions)
 [![Cypress](https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/simple/5d6bqs&style=flat-square&logo=cypress)](https://dashboard.cypress.io/projects/5d6bqs/runs)
 
 # Templatus (view_component_reflex edition)
 
 Templatus is an opinionated template to build web applications with Ruby on Rails and view_component_reflex. It simplifies the process of setting up a new application while following best practices.
 
-Live demo available at 
+Live demo available at
 
 ### Backend
 
@@ -18,7 +18,7 @@ Live demo available at
 
 ### Frontend
 
-- [view_component_reflex](https://github.com/joshleblanc/view_component_reflex) for About Call component methods right from your markup, It builds upon stimulus_reflex and view_component: 
+- [view_component_reflex](https://github.com/joshleblanc/view_component_reflex) for About Call component methods right from your markup, It builds upon stimulus_reflex and view_component:
 - [ViewComponent](https://viewcomponent.org/) for creating reusable, testable & encapsulated view components
 - [stimulus_reflex](https://docs.stimulusreflex.com/) for build reactive applications with the Rails tooling you already know and love
 - [Slim](http://slim-lang.com/) for writing templates instead of ERB
@@ -74,14 +74,14 @@ performed against the demo installation on production. It uses an inexpensive vi
 
 ### Security headers
 
-[![Security headers](docs/security-headers.png)](https://securityheaders.com/?q=templatus-hotwire.ledermann.dev&followRedirects=on)
+[![Security headers](docs/security-headers.png)](https://securityheaders.com/?q=templatus_view_component_reflex.ledermann.dev&followRedirects=on)
 
 What's the red _Permissions-Policy_ badge? This seems to be fixed with one of the next Rails update:
 https://github.com/rails/rails/pull/41994
 
 ### Mozilla Observatory
 
-[![Mozilla Observatory](docs/mozilla-observatory.png)](https://observatory.mozilla.org/analyze/templatus-hotwire.ledermann.dev)
+[![Mozilla Observatory](docs/mozilla-observatory.png)](https://observatory.mozilla.org/analyze/templatus_view_component_reflex.ledermann.dev)
 
 ### WebPageTest
 
@@ -89,11 +89,11 @@ https://github.com/rails/rails/pull/41994
 
 ### GTmetrix
 
-[![GTmetrix](docs/GTmetrix.png)](https://gtmetrix.com/reports/templatus-hotwire.ledermann.dev/rSqolxsw/)
+[![GTmetrix](docs/GTmetrix.png)](https://gtmetrix.com/reports/templatus_view_component_reflex.ledermann.dev/rSqolxsw/)
 
 ### Check-your-website
 
-[![Check-your-website](docs/check-your-website.png)](https://check-your-website.server-daten.de/?q=templatus-hotwire.ledermann.dev)
+[![Check-your-website](docs/check-your-website.png)](https://check-your-website.server-daten.de/?q=templatus_view_component_reflex.ledermann.dev)
 
 ### JavaScript size
 
@@ -124,7 +124,7 @@ rendering chunks...
 ../../public/vite/assets/application.9f0093dd.css   20.74 KiB / gzip: 4.60 KiB
 ../../public/vite/assets/vendor.917f000c.js         145.74 KiB / gzip: 40.22 KiB
 ../../public/vite/assets/vendor.917f000c.js.map     484.65 KiB
-Build with Vite complete: /Users/ledermann/Projects/templatus-hotwire/public/vite
+Build with Vite complete: /Users/ledermann/Projects/templatus_view_component_reflex/public/vite
 ```
 
 ### Network transfer
@@ -135,20 +135,20 @@ Small footprint: The demo application transfers only **51 KB** of data on the fi
 
 ### Docker build time
 
-With multi-stage building and using [DockerRailsBase](https://github.com/ledermann/docker-rails-base) the build of the Docker image takes very little time. Currently, the build job requires about 1,5 minutes on GitHub Actions (see https://github.com/templatus/templatus-hotwire/actions)
+With multi-stage building and using [DockerRailsBase](https://github.com/ledermann/docker-rails-base) the build of the Docker image takes very little time. Currently, the build job requires about 1,5 minutes on GitHub Actions (see https://github.com/templatus/templatus_view_component_reflex/actions)
 
 ### Docker image size
 
 The Docker image is based on Alpine Linux and is optimized for minimal size (currently **117 MB** uncompressed disk size). It includes just the bare minimum - no build tools like Node.js, no JS sources (just the compiled assets), no tests.
 
 ```
-$ container-diff analyze ghcr.io/templatus/templatus-hotwire -n
+$ container-diff analyze ghcr.io/templatus/templatus_view_component_reflex -n
 
 -----Size-----
 
-Analysis for ghcr.io/templatus/templatus-hotwire:
+Analysis for ghcr.io/templatus/templatus_view_component_reflex:
 IMAGE                                      DIGEST       SIZE
-ghcr.io/templatus/templatus-hotwire        sha256:... 116.7M
+ghcr.io/templatus/templatus_view_component_reflex        sha256:... 116.7M
 ```
 
 ## Getting started
@@ -158,8 +158,8 @@ ghcr.io/templatus/templatus-hotwire        sha256:... 116.7M
 1. Clone the repo locally:
 
 ```bash
-git clone git@github.com:templatus/templatus-hotwire.git
-cd templatus-hotwire
+git clone git@github.com:templatus/templatus_view_component_reflex.git
+cd templatus_view_component_reflex
 ```
 
 2. Install PostgreSQL, Redis, and puma-dev (if not already present). On a Mac with HomeBrew, run this to install from the `Brewfile`:
@@ -177,7 +177,7 @@ puma-dev link
 
 # Use Vite via puma-dev proxy
 # Adopted from https://github.com/puma/puma-dev#webpack-dev-server
-echo 3036 > ~/.puma-dev/vite.templatus-hotwire
+echo 3036 > ~/.puma-dev/vite.templatus_view_component_reflex
 ```
 
 4. Setup the application to install gems and NPM packages and create the database:
@@ -192,7 +192,7 @@ bin/setup
 bin/dev
 ```
 
-Then open https://templatus-hotwire.test in your browser.
+Then open https://templatus_view_component_reflex.test in your browser.
 
 ### Preview components in LookBook
 
@@ -200,7 +200,7 @@ Then open https://templatus-hotwire.test in your browser.
 bin/dev
 ```
 
-Then open https://templatus-hotwire.test/lookbook/ in your browser.
+Then open https://templatus_view_component_reflex.test/lookbook/ in your browser.
 
 ### Running linters
 

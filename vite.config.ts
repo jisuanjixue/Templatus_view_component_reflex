@@ -19,7 +19,7 @@ export default defineConfig({
   },
   server: {
     hmr: {
-      host: 'vite.templatus-hotwire.test',
+      host: 'vite.templatus_view_component_reflex.test',
       clientPort: 443,
     },
   },
