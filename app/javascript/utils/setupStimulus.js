@@ -1,5 +1,8 @@
 import { Application } from '@hotwired/stimulus';
 import { registerControllers } from 'stimulus-vite-helpers';
+import StimulusReflex from 'stimulus_reflex';
+import controller from '../controllers/application_controller';
+import consumer from '../channels/consumer';
 
 // Start Stimulus application
 const application = Application.start();
@@ -20,3 +23,6 @@ registerControllers(
   application,
   import.meta.globEager('../../components/**/*_controller.js'),
 );
+
+// Load and register StimulusReflex
+StimulusReflex.initialize(application, { consumer, controller, isolate: true });

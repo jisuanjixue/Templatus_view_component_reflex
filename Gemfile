@@ -17,6 +17,7 @@ gem 'stimulus-rails'
 
 # A framework for building reusable, testable & encapsulated view components in Ruby on Rails. (https://viewcomponent.org)
 gem 'view_component'
+gem "view_component_reflex", "3.2.0"
 
 # Slim templates generator for Rails (https://github.com/slim-template/slim-rails)
 gem 'slim-rails'
@@ -124,3 +125,5 @@ group :production do
   # Error reports you can be happy about. (https://github.com/honeybadger-io/honeybadger-ruby)
   gem 'honeybadger'
 end
+
+gem "stimulus_reflex", "~> 3.5.pre9"
