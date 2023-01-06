@@ -14,7 +14,7 @@
     "daisyui": "^2.46.1",
     "el-transition": "^0.0.7",
     "plausible-tracker": "^0.3.8",
-    "postcss": "^8.4.18",
+    "postcss": "^8.4.20",
     "register-service-worker": "^1.7.2",
     "stimulus_reflex": "^3.5.0-pre9",
     "tailwindcss": "^3.1.8",
