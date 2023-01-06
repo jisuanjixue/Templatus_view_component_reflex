@@ -2,6 +2,7 @@ require 'sidekiq/web'
 require 'lockup'
 
 Rails.application.routes.draw do
+  get 'todos/index'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   mount Lockup::Engine, at: '/lockup' if Rails.env.production?
@@ -18,7 +19,7 @@ Rails.application.routes.draw do
 
   get '/manifest.v1.webmanifest', to: 'statics#manifest', as: :webmanifest
   get '/about', to: 'about#index', as: :about
-  get '/todos', to: 'todo#index'
+  get '/todos', to: 'todos#index'
 
   root to: 'clicks#index'
 end
