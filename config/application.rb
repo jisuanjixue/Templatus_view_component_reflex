@@ -12,8 +12,6 @@ require 'action_cable/engine'
 require 'action_mailbox/engine'
 require 'action_text/engine'
 require 'rails/test_unit/railtie'
-require "view_component"
-require "primer/view_components/engine"
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
