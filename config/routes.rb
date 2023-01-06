@@ -18,6 +18,7 @@ Rails.application.routes.draw do
 
   get '/manifest.v1.webmanifest', to: 'statics#manifest', as: :webmanifest
   get '/about', to: 'about#index', as: :about
+  get '/todos', to: 'todo#index'
 
   root to: 'clicks#index'
 end

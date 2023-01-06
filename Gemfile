@@ -127,3 +127,5 @@ group :production do
 end
 
 gem "stimulus_reflex", "~> 3.5.pre9"
+
+gem "primer_view_components", "~> 0.0.117"
