@@ -59,6 +59,8 @@ gem 'sidekiq'
 gem 'lockup'
 
 group :development, :test do
+
+gem 'erb_lint', require: false
   # Debugging functionality for Ruby (https://github.com/ruby/debug)
   gem 'debug', '>= 1.0.0', platforms: %i[mri mingw x64_mingw]
 
