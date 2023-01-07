@@ -6,6 +6,9 @@ import StimulusHMR from 'vite-plugin-stimulus-hmr';
 import { fileURLToPath, URL } from 'url';
 
 export default defineConfig({
+  define: {
+    'process.env': {}
+  },
   plugins: [
     splitVendorChunkPlugin(),
     RubyPlugin(),
@@ -20,6 +23,7 @@ export default defineConfig({
   server: {
     hmr: {
       host: 'vite.templatus_view_component_reflex.test',
+      usePolling: true,
       clientPort: 443,
     },
   },
